@@ -47,8 +47,10 @@ public class InputStreamTest {
         ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
 
         ObjectInputStream ois = new ObjectInputStream(bais);
+//        ObjectInputStream ois2 = new ObjectInputStream(bais); // java.io.StreamCorruptedException: invalid stream header
         System.out.println("inputAndCreateOutput 1回目の呼び出し:" + (String) ois.readObject());
 //        System.out.println("inputAndCreateOutput 2回目の呼び出し:" + (String) ois.readObject()); // java.io.EOFException
+//        System.out.println("inputAndCreateOutput 2回目の呼び出し:" + (String) ois2.readObject()); // java.io.EOFException
         System.out.println("inputAndCreateOutput 2回目の呼び出し:" + inputStreemToString(bais)); // NULL
     }
 
