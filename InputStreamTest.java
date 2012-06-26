@@ -57,7 +57,7 @@ public class InputStreamTest {
         bais.mark(1024);
         System.out.println("inputMark 1回目の呼び出し:" + inputStreemToString(bais));
         bais.reset();
-        System.out.println("inputMark 2回目の呼び出し:" + inputStreemToString(bais)); // NULL
+        System.out.println("inputMark 2回目の呼び出し:" + inputStreemToString(bais));
     }
 
     private static String inputStreemToString(InputStream in) throws IOException{
