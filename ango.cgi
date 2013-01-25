@@ -6,11 +6,11 @@ use utf8;
 use MIME::Base64;
 use String::Random;
 
-print "Content-type: text/html\n\n";
+#print "Content-type: text/html\n\n";
 my $ango = "foo bar";
 $ango = &cryptkj($ango);
 print $ango;
-print "<br>";
+#print "\n";
 print &decryptkj($ango);
 
 sub cryptkj {

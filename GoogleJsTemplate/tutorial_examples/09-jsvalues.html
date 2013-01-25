@@ -1,0 +1,22 @@
+<html>
+<head><title>Address Book Using Jstemplates</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="../google.jstemplate.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    function jsinit() {
+      var mydata = {end: 'Bar'};
+		  var context = new jstmpl.JsEvalContext(mydata);
+		  var template = document.getElementById('out');
+		  jstmpl.jstProcess(context, template);
+    }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/maps2.deb.css"/>
+</head>
+<body onload="jsinit()">
+
+<div id="out">
+<div id="Food" jsvalues=".id:'Joe';.style.fontSize:'30pt'" jscontent="this.parentNode.id + this.id + $this.end"></div>
+</div>
+
+</body>
+</html>
