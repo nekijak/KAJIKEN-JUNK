@@ -22,10 +22,10 @@ $data =~ s/.*<BODY.+?>//g;
 $data =~ s/<\/BODY.*>//g;
 
 my @table = split(/<TR>/, $data);
-my $width = 9;
-if($table[0] =~ /WIDTH=(\d+)/) {
-  $width = $1;
-}
+#my $width = 9;
+#if($table[0] =~ /WIDTH=(\d+)/) {
+#  $width = $1;
+#}
 my $cols = 1;
 if($table[0] =~ /COLS=(\d+)/) {
   $cols = $1;
