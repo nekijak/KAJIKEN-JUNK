@@ -130,6 +130,7 @@ sub load_list {
   print "Load Play List.\n";
   unless (-f $play_db) {
     &create_table();
+    return undef;
   }
 
   my $dbh = DBI->connect($data_source);
