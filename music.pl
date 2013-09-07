@@ -93,7 +93,7 @@ sub get_tags {
     $artist = &dec_tag($id3v2, 'TPE1') || "";
   }
   $mp3->close();
-  $title = $1 if ($title eq "" && $_[0] =~ /\/([^\/]+?).mp3$/);
+  $title = $1 if ($title eq "" && $_[0] =~ /\/([^\/]+?)\.mp3$/);
   return ($title, $artist);
 }
 
