@@ -32,6 +32,7 @@ if __name__ == "__main__":
   # You can also modify a global varible in a local scope like so
   def do_nothing():
     outside = 'nope'
+  do_nothing()
   print(outside) # {'out': 'side'}
   def alter_outside():
     global outside
