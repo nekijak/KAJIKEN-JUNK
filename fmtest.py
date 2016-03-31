@@ -46,6 +46,8 @@ if __name__ == "__main__":
 
   # foo bar baz
   # SyntaxError!
+  #print "{hoge} {fuga} {piyo}".format(**data, piyo='baz')
+  # OK
   print "{hoge} {fuga} {piyo}".format(piyo='baz', **data)
 
   # What is best practice?
